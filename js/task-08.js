@@ -12,7 +12,7 @@ function handleSubmit(event) {
         alert('All fields must be filled!!!');
     } else {
 
-        console.log(`Login: ${email.value}, Password: ${password.value}`);
+        console.log(`Email: ${email.value}, Password: ${password.value}`);
         event.currentTarget.reset();
     }
 }
