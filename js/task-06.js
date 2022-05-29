@@ -5,10 +5,11 @@ const maxLength = Number(maxLengthInput);
 input.addEventListener('blur', (event) => {
     
     if (input.value.length !== maxLength) {
+        input.classList.remove('valid');
         input.classList.add('invalid');
     } else {
         input.classList.remove('invalid');
-        input.classList.add('valid')
+        input.classList.add('valid');
     }
 
 });
